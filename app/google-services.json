@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "962585612747",
+    "project_id": "cardiac-monitor-d7d27",
+    "storage_bucket": "cardiac-monitor-d7d27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962585612747:android:1b14a8cb4f8cd7346ee64e",
+        "android_client_info": {
+          "package_name": "com.example.cardiacmonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962585612747-aqrskus82s22qqhtog936mk5f6t3ekag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXm7eGfOvSiHtSQlWE8Hn4ODiUcA3EBlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962585612747-aqrskus82s22qqhtog936mk5f6t3ekag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
