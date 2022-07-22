@@ -1,9 +1,17 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 81268d184a4a64155afe3497aaaf120322fc23a3
 buildscript {
     dependencies {
         classpath 'com.google.gms:google-services:4.3.13'
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 
+<<<<<<< HEAD
+=======
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+>>>>>>> 81268d184a4a64155afe3497aaaf120322fc23a3
 plugins {
     id 'com.android.application' version '7.2.1' apply false
     id 'com.android.library' version '7.2.1' apply false
