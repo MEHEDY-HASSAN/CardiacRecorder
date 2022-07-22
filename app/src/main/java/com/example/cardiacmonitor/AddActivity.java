@@ -6,11 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class AddActivity extends AppCompatActivity {
 
     public TextView Systolic_pressure,Diastolic_pressure,Heart_rate,Measure_time,Measure_date,Comment;
     public Button Add_button;
+
+    DatabaseReference database;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +39,14 @@ public class AddActivity extends AppCompatActivity {
                 Integer Systolic_pressureNumber = Integer.parseInt(systolic_pressureString);
                 Integer Diastolic_pressureNumber = Integer.parseInt(Diastolic_pressureString);
                 Integer Heart_rateNumber = Integer.parseInt(Heart_rateString);
+
+                Record record = new Record(Measure_dateString,Measure_timeString,Systolic_pressureNumber,Diastolic_pressureNumber,Heart_rateNumber,CommentString);
+                database.child(database.getKey()).setValue(record).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        Toast.makeText(AddActivity.this, "Added successfully", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     }
@@ -43,5 +60,9 @@ public class AddActivity extends AppCompatActivity {
         Comment = (TextView) findViewById(R.id.ADD_Enter_Comment);
 
         Add_button = (Button) findViewById(R.id.ADD_ADDButton);
+
+        mAuth = FirebaseAuth.getInstance();
+        String userId = mAuth.getUid().toString();
+        database = FirebaseDatabase.getInstance().getReference("Record").child(userId);
     }
 }

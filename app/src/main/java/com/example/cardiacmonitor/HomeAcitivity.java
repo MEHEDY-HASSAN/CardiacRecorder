@@ -29,6 +29,7 @@ public class HomeAcitivity extends AppCompatActivity {
 
     public Button logout;
     private FirebaseAuth mAuth;
+    Button homeRecordAddButton ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,13 +44,26 @@ public class HomeAcitivity extends AppCompatActivity {
                 mainActivityIntent();
             }
         });
+        homeRecordAddButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AddRecordIntent();
+            }
+        });
+    }
+
+    private void AddRecordIntent() {
+        Intent intent = new Intent(this,AddActivity.class);
+        this.startActivity(intent);
     }
 
     private void initialization() {
+        homeRecordAddButton = findViewById(R.id.home_add_record);
         mAuth = FirebaseAuth.getInstance();
         logout = (Button) findViewById(R.id.home_logOut);
         recyclerView = (RecyclerView) findViewById(R.id.record_recycler_view);
-        database = FirebaseDatabase.getInstance().getReference("Record");
+        String userId = mAuth.getUid().toString();
+        database = FirebaseDatabase.getInstance().getReference("Record").child(userId);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

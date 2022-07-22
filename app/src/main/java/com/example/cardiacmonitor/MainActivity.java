@@ -27,15 +27,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (currentUser!=null){
-                    homeActivityIntent();
+                    //homeActivityIntent();
+                    addActivityIntent();
                 }
                 else
                     loginActivityIntent();
             }
-        }, 2000);
+        }, 200);
 
 
     }
+
+    private void addActivityIntent() {
+        Intent addIntent = new Intent(this,AddActivity.class);
+        this.startActivity(addIntent);
+    }
+
 
     private void homeActivityIntent() {
         Intent homeIntent = new Intent(this,HomeAcitivity.class);
