@@ -20,7 +20,7 @@
         android:fontFamily="monospace"
         android:text="Cardiac Monitor"
         android:textColor="@color/black"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:id="@+id/first_text_in_splace_view"
         android:textStyle="bold" />
 
