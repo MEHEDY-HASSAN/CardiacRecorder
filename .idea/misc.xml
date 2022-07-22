@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/mhemo/AndroidStudioProjects/CardiacMonitor/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/mhemo/Desktop/software lab project/CardiacRecorder/app/src/main/res/layout/activity_main.xml" value="0.2" />
+=======
+        <entry key="..\:/Software Lab Project/CardiacRecorder/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/mhemo/AndroidStudioProjects/CardiacMonitor/app/src/main/res/layout/activity_main.xml" value="0.22" />
+>>>>>>> a6582429ee914607dd14d55e00d5695dae3f3ace
       </map>
     </option>
   </component>
