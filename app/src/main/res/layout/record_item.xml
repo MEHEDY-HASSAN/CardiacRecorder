@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp"
+    android:background="@color/white"
+    android:id="@+id/record_card_view"
+    >
+
+    <view
+        android:id="@+id/record_color_view"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="12dp"
+        android:layout_height="120dp"
+        android:background="@color/black"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_marginLeft="20dp"
+        >
+        <!-- this is for date and time -->
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/record_date_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date : "
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                ></TextView>
+            <TextView
+                android:id="@+id/record_time_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time : "
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                ></TextView>
+
+        </LinearLayout>
+
+        <!-- for systolic and diastolic name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/record_systole_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/electrolize"
+                android:layout_weight="1"
+                android:text="Systole"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/record_diastole_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/electrolize"
+                android:text="Diastole"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:weightSum="2"
+            >
+
+            <TextView
+                android:id="@+id/record_systole_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/electrolize"
+                android:layout_weight="1"
+                android:text="100"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/record_diastole_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/electrolize"
+                android:text="70"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/record_comment_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comment: "
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                ></TextView>
+            <TextView
+                android:id="@+id/record_heart_rate_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heart Rate:  "
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                ></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
