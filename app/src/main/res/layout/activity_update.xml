@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".UpdateActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Update_Enter_Systolic_pressure"
+        android:hint="Enter Systolic pressure"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Update_Enter_Systolic_pressure"
+        android:id="@+id/Update_Enter_Diastolic_pressure"
+        android:hint="Enter Diastolic pressure"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Update_Enter_Diastolic_pressure"
+        android:id="@+id/Update_Enter_Heart_Rate"
+        android:hint="Enter Heart Rate"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Update_Enter_Heart_Rate"
+        android:id="@+id/Update_Enter_Measure_Time"
+        android:hint="Enter Heart Rate"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Update_Enter_Measure_Time"
+        android:id="@+id/Update_Enter_Measure_Date"
+        android:hint="Enter Measure Date"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Update_Enter_Measure_Date"
+        android:id="@+id/Update_Enter_Comment"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:hint="Enter Comment"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Update_Enter_Comment"
+        android:layout_centerHorizontal="true"
+        android:text="UPDATE"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Update_UpdateButton"
+        >
+    </Button>
+
+</RelativeLayout>

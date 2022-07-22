@@ -14,15 +14,18 @@
         android:theme="@style/Theme.CardiacMonitor"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
-=======
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
->>>>>>> 81268d184a4a64155afe3497aaaf120322fc23a3
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
