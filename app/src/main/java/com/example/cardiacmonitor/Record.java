@@ -22,6 +22,32 @@ public class Record {
         this.comment = comment;
     }
 
+    public void setDataMeasured(String dataMeasured) {
+        this.dataMeasured = dataMeasured;
+    }
+
+    public void setTimeMeasured(String timeMeasured) {
+        this.timeMeasured = timeMeasured;
+    }
+
+    public void setSystolicPressure(int systolicPressure) {
+        this.systolicPressure = systolicPressure;
+    }
+
+    public void setDiastolicPressure(int diastolicPressure) {
+        this.diastolicPressure = diastolicPressure;
+    }
+
+    public void setHeartRate(int heartRate) {
+        this.heartRate = heartRate;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+
+
     public String getDataMeasured() {
         return dataMeasured;
     }

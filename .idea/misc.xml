@@ -9,6 +9,15 @@
         <entry key="..\:/Software Lab Project/CardiacRecorder/app/src/main/res/layout/activity_register.xml" value="0.10885416666666667" />
         <entry key="..\:/Software Lab Project/CardiacRecorder/app/src/main/res/layout/activity_update.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mhemo/AndroidStudioProjects/CardiacMonitor/app/src/main/res/layout/activity_main.xml" value="0.22" />
+<<<<<<< HEAD
+=======
+        <entry key="..\:/Users/mhemo/Desktop/software lab project/CardiacRecorder/app/src/main/res/drawable/floating_add.xml" value="0.2075" />
+        <entry key="..\:/Users/mhemo/Desktop/software lab project/CardiacRecorder/app/src/main/res/layout/activity_home_acitivity.xml" value="0.1859375" />
+        <entry key="..\:/Users/mhemo/Desktop/software lab project/CardiacRecorder/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/mhemo/Desktop/software lab project/CardiacRecorder/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/mhemo/Desktop/software lab project/CardiacRecorder/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/mhemo/Desktop/software lab project/CardiacRecorder/app/src/main/res/layout/record_item.xml" value="0.25" />
+>>>>>>> b253bf2ab6804878abc25a4e0302786bd3f82025
       </map>
     </option>
   </component>
@@ -17,12 +26,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.22" />
-      </ProjectState>
-    </option>
   </component>
 </project>
