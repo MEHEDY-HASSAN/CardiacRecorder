@@ -109,15 +109,33 @@
         >
     </EditText>
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/Update_Enter_Comment"
         android:layout_centerHorizontal="true"
-        android:text="UPDATE"
-        android:layout_marginTop="40dp"
-        android:id="@+id/Update_UpdateButton"
         >
-    </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="UPDATE"
+            android:layout_marginTop="40dp"
+            android:id="@+id/Update_UpdateButton"
+            >
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Delete"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/Update_DeleteButton"
+            >
+        </Button>
+    </LinearLayout>
+
+
 
 </RelativeLayout>

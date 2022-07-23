@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (currentUser!=null){
-                    //homeActivityIntent();
-                    addActivityIntent();
+                    homeActivityIntent();
+                    //addActivityIntent();
                 }
                 else
                     loginActivityIntent();

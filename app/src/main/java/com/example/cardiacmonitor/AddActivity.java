@@ -2,6 +2,7 @@ package com.example.cardiacmonitor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,8 +25,9 @@ public class AddActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Initialization();
         setContentView(R.layout.activity_add);
+
+        Initialization();
         Add_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,10 +43,12 @@ public class AddActivity extends AppCompatActivity {
                 Integer Heart_rateNumber = Integer.parseInt(Heart_rateString);
 
                 Record record = new Record(Measure_dateString,Measure_timeString,Systolic_pressureNumber,Diastolic_pressureNumber,Heart_rateNumber,CommentString);
-                database.child(database.getKey()).setValue(record).addOnSuccessListener(new OnSuccessListener<Void>() {
+                database.push().setValue(record).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        Toast.makeText(AddActivity.this, "Added successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddActivity.this, "Added Successful", Toast.LENGTH_SHORT).show();
+                        Intent HomeIntenet = new Intent(AddActivity.this,HomeAcitivity.class);
+                        AddActivity.this.startActivity(HomeIntenet);
                     }
                 });
             }
