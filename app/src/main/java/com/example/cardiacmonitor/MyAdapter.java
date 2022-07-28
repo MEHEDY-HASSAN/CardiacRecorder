@@ -14,6 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+/**
+ * This is an Adapter class that will get all the records into the RecyclerView
+ */
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
 
@@ -21,11 +25,30 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     ArrayList<Record> list;
     ArrayList<String> keys;
 
+
+    /**
+     * This is the parameterized constructor
+     * @param context
+     *      context value
+     * @param list
+     *      this is a list which will contain all the records
+     * @param keys
+     *      this is a list which will contain all the keys of the firebase basebase data
+     */
+
     public MyAdapter(Context context, ArrayList<Record> list , ArrayList<String>keys) {
         this.context = context;
         this.list = list;
         this.keys = keys;
     }
+
+    /**
+     * This is the parameterized ViewHolder
+     * @param parent
+     *      contain all the viewGroup
+     * @param viewType
+     *      this will tell the type of the view
+     */
 
     @NonNull
     @Override
@@ -90,10 +113,21 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         });
     }
 
+    /**
+     *  Get ItemCount
+     * @return
+     *   Return size of the list
+     */
+
     @Override
     public int getItemCount() {
         return list.size();
     }
+
+
+    /**
+     * This is a viewHolder class with will contain all the view content of the cardview.
+     */
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
