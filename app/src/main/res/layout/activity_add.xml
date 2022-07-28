@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
-    tools:context=".AddActivity">
+    tools:context=".AddActivity"
+    android:background="@color/backgroundColor">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Systolic pressure"
+        android:id="@+id/demo_id_1"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="15dp"
+        android:textStyle="bold"
+        ></TextView>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +30,7 @@
         android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:paddingTop="15dp"
         android:paddingBottom="15dp">
@@ -34,7 +47,7 @@
         android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:paddingTop="15dp"
         android:paddingBottom="15dp">
@@ -51,7 +64,7 @@
         android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:paddingTop="15dp"
         android:paddingBottom="15dp">
@@ -62,13 +75,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/Add_Enter_Heart_Rate"
         android:id="@+id/ADD_Enter_Measure_Time"
-        android:hint="Enter Heart Rate"
+        android:hint="Enter Measure Time"
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:paddingTop="15dp"
         android:paddingBottom="15dp">
@@ -85,7 +98,7 @@
         android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:paddingTop="15dp"
         android:paddingBottom="15dp">
@@ -104,7 +117,7 @@
         android:paddingLeft="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         >
     </EditText>
@@ -115,7 +128,7 @@
         android:layout_below="@id/ADD_Enter_Comment"
         android:layout_centerHorizontal="true"
         android:text="ADD"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:id="@+id/ADD_ADDButton"
         >
     </Button>
