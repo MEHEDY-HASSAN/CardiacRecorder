@@ -12,9 +12,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/label_systolic_pressure"
         android:text="Systolic Pressure"
+        android:textSize="14dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         >
     </TextView>
     <EditText
@@ -34,10 +35,23 @@
         android:paddingBottom="15dp">
     </EditText>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_diastolic_pressure"
+        android:layout_below="@+id/Update_Enter_Systolic_pressure"
+        android:text="Diastolic Pressure"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Update_Enter_Systolic_pressure"
+        android:layout_below="@id/label_diastolic_pressure"
         android:id="@+id/Update_Enter_Diastolic_pressure"
         android:hint="Enter Diastolic pressure"
         android:textColor="#000000"
@@ -51,12 +65,25 @@
         android:paddingBottom="15dp">
     </EditText>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_heart_rate"
+        android:layout_below="@+id/Update_Enter_Diastolic_pressure"
+        android:text="Heart Rate"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Update_Enter_Diastolic_pressure"
+        android:layout_below="@id/label_heart_rate"
         android:id="@+id/Update_Enter_Heart_Rate"
-        android:hint="Enter Heart Rate"
+        android:hint="Enter Measured Time"
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:paddingLeft="10dp"
@@ -68,12 +95,25 @@
         android:paddingBottom="15dp">
     </EditText>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_Enter_Measure_time"
+        android:layout_below="@+id/Update_Enter_Heart_Rate"
+        android:text="Measured Time"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Update_Enter_Heart_Rate"
+        android:layout_below="@id/label_Enter_Measure_time"
         android:id="@+id/Update_Enter_Measure_Time"
-        android:hint="Enter Heart Rate"
+        android:hint="Enter Measured Time"
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:paddingLeft="10dp"
@@ -85,12 +125,25 @@
         android:paddingBottom="15dp">
     </EditText>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_measured_date"
+        android:layout_below="@+id/Update_Enter_Measure_Time"
+        android:text="Measured Date"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Update_Enter_Measure_Time"
+        android:layout_below="@id/label_measured_date"
         android:id="@+id/Update_Enter_Measure_Date"
-        android:hint="Enter Measure Date"
+        android:hint="Enter Measured Date"
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:paddingLeft="10dp"
@@ -101,11 +154,22 @@
         android:paddingTop="15dp"
         android:paddingBottom="15dp">
     </EditText>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_enter_comment"
+        android:layout_below="@+id/Update_Enter_Measure_Date"
+        android:text="Comment"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+    </TextView>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Update_Enter_Measure_Date"
+        android:layout_below="@id/label_enter_comment"
         android:id="@+id/Update_Enter_Comment"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
