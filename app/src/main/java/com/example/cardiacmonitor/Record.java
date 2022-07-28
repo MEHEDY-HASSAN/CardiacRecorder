@@ -123,26 +123,60 @@ public class Record implements Serializable, Comparable<Record>{
     }
 
 
-
+    /**
+     *  Get date
+     * @return
+     *   Return date
+     */
     public String getDataMeasured() {
         return dataMeasured;
     }
+
+    /**
+     *  Get time
+     * @return
+     *   Return time
+     */
 
     public String getTimeMeasured() {
         return timeMeasured;
     }
 
+    /**
+     *  Get systolicPressure
+     * @return
+     *   Return systolicPressure
+     */
+
     public int getSystolicPressure() {
         return systolicPressure;
     }
+
+    /**
+     *  Get diastolicPressure
+     * @return
+     *   Return diastolicPressure
+     */
 
     public int getDiastolicPressure() {
         return diastolicPressure;
     }
 
+    /**
+     *  Get heartRate
+     * @return
+     *   Return heartRate
+     */
+
     public int getHeartRate() {
         return heartRate;
     }
+
+    /**
+     *  Get comment
+     * @return
+     *   Return comment
+     */
 
     public String getComment() {
         return comment;
@@ -150,7 +184,7 @@ public class Record implements Serializable, Comparable<Record>{
 
 
     /**
-     *
+     * this will return the Record
      * @param record
      * @return
      */

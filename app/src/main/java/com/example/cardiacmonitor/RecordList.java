@@ -11,9 +11,7 @@ public class RecordList {
     List<Record> records = new ArrayList<>();
 
     /**
-     * This adds record to the arrayList
-     * @param record
-     *      This is the record to add
+     * @param record : Record
      */
 
     public void add(Record record)
@@ -26,9 +24,7 @@ public class RecordList {
     }
 
     /**
-     * This removes a record from the list
-     * @param record
-     *      This is the record to delete
+     * @param record : Record
      */
 
     public void remove(Record record)
@@ -44,24 +40,17 @@ public class RecordList {
     }
 
     /**
-     * This is edits a record in given position
-     * @param pos
-     *      the position where we will edit
-     * @param record
-     *      the record which will update the values
+     * @param  pos : int
+     * @param record : Record
      */
-
     public void edit(int pos, Record record)
     {
         records.set(pos,record);
     }
 
     /**
-     * This returns the list
-     * @return
-     *      return the list
+     * @return : Record
      */
-
     public List<Record>getRecord()
     {
         return records;
