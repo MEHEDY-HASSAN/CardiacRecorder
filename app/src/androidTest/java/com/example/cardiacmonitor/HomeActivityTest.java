@@ -50,7 +50,9 @@ public class HomeActivityTest {
 
         Espresso.onView(withId(R.id.Add_Enter_Systolic_pressure)).perform(ViewActions.typeText("120"));
         Espresso.onView(withId(R.id.Add_Enter_Diastolic_pressure)).perform(ViewActions.typeText("80"));
+        Espresso.pressBack(); //Back button
         Espresso.onView(withId(R.id.Add_Enter_Heart_Rate)).perform(ViewActions.typeText("80"));
+        Espresso.pressBack(); //Back button
         Espresso.onView(withId(R.id.ADD_Enter_Measure_Time)).perform(ViewActions.typeText("9:51"));
         Espresso.pressBack(); //Back button
         Espresso.onView(withId(R.id.ADD_Enter_Measure_Date)).perform(ViewActions.typeText("22/07/2022"));
